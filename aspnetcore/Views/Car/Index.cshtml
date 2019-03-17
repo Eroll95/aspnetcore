@@ -1,0 +1,15 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<aspnetcore.Models.Car>
+
+<head>
+    <link href="~/css/cars.css" rel="stylesheet" />
+</head>
+
+@foreach (var car in Model)
+{
+    <div>
+        <p>@car.Brand</p>
+        <p>@car.Model</p>
+        <a asp-controller="Car" asp-action="CarDetails" asp-route-id="@car.Id">Details</a>
+    </div>
+}

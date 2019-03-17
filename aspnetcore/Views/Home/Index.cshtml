@@ -1,0 +1,15 @@
+﻿@model IEnumerable<aspnetcore.Models.Restaurant>
+
+    <head>
+        <link href="~/css/restaurants.css" rel="stylesheet" />
+    </head>
+
+    @foreach (var restaurant in Model)
+    {
+        <div>
+            <p>@restaurant.Id</p>
+            <p>@restaurant.Name</p>
+            <p>@restaurant.Description</p>
+            <p>@restaurant.Rating</p>
+        </div>
+    }
