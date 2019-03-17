@@ -1,0 +1,19 @@
+﻿@model aspnetcore.Models.Car
+
+    <head>
+        <link href="css/cars.css" rel="stylesheet" />
+    </head>
+
+    <div>
+        <p>@Model.Brand</p>
+        <p>@Model.Model</p>
+        <p>@Model.PricePerHour</p>
+        <p>@Model.PricePerDay</p>
+        <p>@Model.PriceForWeekend</p>
+        <p>@Model.PricePerWeek</p>
+        <p>@Model.Acceleration</p>
+        <p>@Model.Power</p>
+        <p>@Model.Torque</p>
+        <p>@Model.MaxSpeed</p>
+        <img src=@Model.Image />
+    </div>
