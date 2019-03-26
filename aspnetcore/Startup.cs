@@ -1,4 +1,5 @@
-﻿using aspnetcore.Services.CarsService;
+﻿using aspnetcore.Services.BikeService;
+using aspnetcore.Services.CarsService;
 using aspnetcore.Services.RestaurantService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,6 +15,7 @@ namespace aspnetcore
         {
             services.AddTransient<IRestaurantRepository, RestaurantMockData>();
             services.AddScoped<ICarsRepository, CarsMockData>();
+            services.AddScoped<IBikesRepository, BikesMockData>();
             services.AddMvc();
         }
 
