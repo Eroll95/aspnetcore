@@ -1,0 +1,20 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<aspnetcore.Models.Bike>
+
+
+<head>
+    <link href="~/css/bikes.css" rel="stylesheet" />
+</head>
+
+@foreach (var bike in Model)
+{
+<div>
+    <p>@bike.Brand</p>
+    <p>@bike.Model</p>
+    <p>@bike.Acceleration</p>
+    <p>@bike.Power</p>
+    <p>@bike.MaxSpeed</p>
+    <img src=@bike.Image />
+    <br />
+</div>
+}

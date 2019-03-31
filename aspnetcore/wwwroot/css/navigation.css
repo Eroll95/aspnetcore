@@ -19,7 +19,7 @@
     justify-content: center;
     height: 30px;
     margin: 0 auto;
-    background: #b3b3b3;
+    background: #ffd800;
 }
 
 .navigation-pagesPanel-item {
@@ -35,5 +35,5 @@
 }
 
     .navigation-pagesPanel-item:hover {
-        color: #fff;
+        color: #ff0000;
     }
